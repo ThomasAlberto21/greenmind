@@ -1,5 +1,5 @@
 <template>
-  <section class="hero container mt-3 mb-5">
+  <section class="hero mt-3 mb-5">
     <div class="rounded-4" style="background-color: #c1dcdc">
       <div class="row">
         <div class="col-lg-6 col-md-12 px-5 py-5">

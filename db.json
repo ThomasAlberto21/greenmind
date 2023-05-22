@@ -1,5 +1,5 @@
 {
-  "best-products": [
+  "best_products": [
     {
       "id": 1,
       "title": "Natural Plants",
@@ -14,5 +14,6 @@
       "price": 5.5,
       "image": "https://images.unsplash.com/photo-1557090495-fc9312e77b28?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
     }
-  ]
+  ],
+  "products": []
 }
