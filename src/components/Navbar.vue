@@ -47,6 +47,6 @@
 
 <script>
 export default {
-  name: 'NavbarComponents',
+  name: 'NavbarComponent',
 };
 </script>
