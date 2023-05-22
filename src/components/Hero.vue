@@ -2,6 +2,7 @@
   <section class="hero my-4">
     <div class="rounded-4" style="background-color: #c1dcdc">
       <div class="row">
+        <!-- Left -->
         <div class="col-lg-6 col-md-12 px-5 py-5">
           <h1 class="fw-bolder display-2 text-dark">
             Buy your <br />
@@ -27,6 +28,7 @@
           </router-link>
         </div>
 
+        <!-- Right -->
         <div class="col-lg-6 col-md-12">
           <img
             src="../assets/hero.png"
