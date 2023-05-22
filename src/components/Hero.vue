@@ -2,7 +2,7 @@
   <section class="hero container mt-3 mb-5">
     <div class="w-100 h-100 rounded-4" style="background-color: #c1dcdc">
       <div class="row">
-        <div class="col-lg-6 col-md-12 px-md-5 px-5 py-5 text-start">
+        <div class="col-lg-6 col-md-12 px-5 py-5 text-start">
           <h1 class="fw-bolder display-2 text-dark">
             Buy your <br />
             dream plants
