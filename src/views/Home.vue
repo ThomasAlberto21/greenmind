@@ -5,7 +5,7 @@
 
       <div class="row">
         <div
-          class="col"
+          class="col-lg-6 col-12"
           v-for="best_product in best_products"
           :key="best_product.id"
         >
