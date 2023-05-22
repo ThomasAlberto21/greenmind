@@ -2,6 +2,7 @@
   <div class="home">
     <div class="container">
       <Hero />
+
       <div class="row">
         <div
           class="col"
