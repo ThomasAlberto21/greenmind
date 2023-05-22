@@ -24,7 +24,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav gap-lg-4">
           <li class="nav-item">
-            <router-link to="/" class="nav-link active">Home</router-link>
+            <router-link to="/" class="nav-link">Home</router-link>
           </li>
           <li class="nav-item">
             <router-link to="/products" class="nav-link">Products</router-link>
@@ -50,3 +50,10 @@ export default {
   name: 'NavbarComponent',
 };
 </script>
+
+<style>
+nav a.router-link-exact-active {
+  color: black;
+  font-weight: 600;
+}
+</style>
