@@ -4,6 +4,29 @@
     <div class="container my-5">
       <h3 class="fw-normal mb-5">All <strong>Products</strong></h3>
 
+      <div class="row mb-5">
+        <div class="col">
+          <div class="input-group">
+            <input
+              v-model="search"
+              type="text"
+              class="form-control"
+              placeholder="Search Plants..."
+              aria-label="Search Plants..."
+              aria-describedby="basic-addon2"
+              @keyup="searchFood"
+            />
+            <div
+              class="input-group-text text-white"
+              id="search"
+              style="background-color: #c1dcdc"
+            >
+              <i class="bi bi-search text-dark"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="row">
         <div
           class="col-lg-3 col-md-6 mb-5"
