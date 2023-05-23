@@ -1,15 +1,11 @@
 <template>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container">
-      <a class="navbar-brand me-5" href="#">
-        <img
-          src="../assets/logo.png"
-          alt="Bootstrap"
-          width="150"
-          height="24"
-          class="img-fluid"
-        />
-      </a>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container mt-3">
+      <a
+        class="navbar-brand me-5 mt-1 fw-normal"
+        style="font-family: 'Quella', sans-serif"
+        >GREENMIND</a
+      >
       <button
         class="navbar-toggler"
         type="button"
