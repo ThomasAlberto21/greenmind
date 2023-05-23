@@ -12,7 +12,7 @@
       <h5 class="fw-bold">
         {{ trending_product.title }}
       </h5>
-      <p class="fw-normal">$.{{ trending_product.price }}</p>
+      <p class="fw-normal">${{ trending_product.price }}</p>
     </div>
   </section>
 </template>
