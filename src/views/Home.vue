@@ -22,7 +22,7 @@
 
       <div class="row">
         <div
-          class="col-lg-3"
+          class="col-lg-3 mb-5"
           v-for="trending_product in trending_products"
           :key="trending_product.id"
         >
