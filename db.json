@@ -15,5 +15,13 @@
       "image": "https://images.unsplash.com/photo-1557090495-fc9312e77b28?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
     }
   ],
-  "products": []
+  "all_products": [
+    {
+      "id": 1,
+      "title": "Rose Plants",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae eaque veritatis iure ullam ad quidem delectus velit laudantium dicta voluptate!",
+      "price": 200,
+      "image": "https://plus.unsplash.com/premium_photo-1681807331836-74c62f6ccab0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=382&q=80"
+    }
+  ]
 }
