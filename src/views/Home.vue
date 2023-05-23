@@ -13,8 +13,11 @@
         </div>
       </div>
 
-      <div>
-        <h1>Trending Now</h1>
+      <div class="text-center my-5">
+        <h1 class="fw-bolder">Trending Now</h1>
+        <p class="fst-italic">
+          Find plants to decorate your favorite room in the house.
+        </p>
       </div>
 
       <div class="row">
