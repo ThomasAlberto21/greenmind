@@ -7,12 +7,12 @@
           <img
             :src="best_product.image"
             alt="best_product_image"
-            class="img-fluid h-100 w-100 rounded-4"
+            class="img-fluid rounded-4"
           />
         </div>
 
         <!-- Right -->
-        <div class="col-md-7 py-lg-0 py-md-0 py-4 px-lg-2 px-md-3 px-5">
+        <div class="col-md-7 py-lg-0 py-md-0 py-5 px-lg-2 px-md-3 px-5">
           <h2 class="fw-bolder">{{ best_product.title }}</h2>
           <p class="fw-normal mt-4">{{ best_product.description }}</p>
           <h5 class="fw-light mb-4">${{ best_product.price }}</h5>

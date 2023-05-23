@@ -12,6 +12,20 @@
           <BestProduct :best_product="best_product" />
         </div>
       </div>
+
+      <div>
+        <h1>Trending Now</h1>
+      </div>
+
+      <div class="row">
+        <div
+          class="col-lg-3"
+          v-for="trending_product in trending_products"
+          :key="trending_product.id"
+        >
+          <TrendingProduct :trending_product="trending_product" />
+        </div>
+      </div>
     </div>
   </section>
 </template>
@@ -21,6 +35,7 @@ import axios from 'axios';
 import Hero from '@/components/Hero.vue';
 import Navbar from '@/components/Navbar.vue';
 import BestProduct from '@/components/BestProduct.vue';
+import TrendingProduct from '@/components/TrendingProduct.vue';
 
 export default {
   name: 'HomeView',
@@ -28,11 +43,13 @@ export default {
     Hero,
     Navbar,
     BestProduct,
+    TrendingProduct,
   },
 
   data() {
     return {
       best_products: [],
+      trending_products: [],
     };
   },
 
@@ -40,12 +57,20 @@ export default {
     setBestProducts(data) {
       this.best_products = data;
     },
+    setTrendingProducts(data) {
+      this.trending_products = data;
+    },
   },
 
   mounted() {
     axios
       .get('http://localhost:3000/best_products')
       .then((response) => this.setBestProducts(response.data))
+      .catch((error) => console.log(error));
+
+    axios
+      .get('http://localhost:3000/trending_products')
+      .then((response) => this.setTrendingProducts(response.data))
       .catch((error) => console.log(error));
   },
 };
