@@ -1,6 +1,6 @@
 <template>
   <section class="footer mt-5" style="background-color: #c1dcdc">
-    <footer class="text-white text-center text-md-start">
+    <footer class="text-center text-md-start">
       <div class="container p-4">
         <div class="row mt-4">
           <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
@@ -28,55 +28,55 @@
             </div>
           </div>
 
-          <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+          <div class="col-lg-2 col-md-4 mb-4 mt-lg-0 mt-md-4">
             <h5 class="fw-semibold text-dark mb-3">Information</h5>
 
             <ul class="list-unstyled">
               <li>
-                <a class="text-decoration-none">About</a>
+                <a class="text-decoration-none opacity-75">About</a>
               </li>
               <li class="my-4">
-                <a class="text-decoration-none">Product</a>
+                <a class="text-decoration-none opacity-75">Product</a>
               </li>
               <li>
-                <a class="text-decoration-none">Blog</a>
+                <a class="text-decoration-none opacity-75">Blog</a>
               </li>
             </ul>
           </div>
 
-          <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+          <div class="col-lg-2 col-md-4 mb-4 mt-lg-0 mt-md-4">
             <h5 class="fw-semibold text-dark mb-3">Company</h5>
 
             <ul class="list-unstyled mb-0">
               <li>
-                <a class="text-decoration-none">Community</a>
+                <a class="text-decoration-none opacity-75">Community</a>
               </li>
               <li class="my-4">
-                <a class="text-decoration-none">Career</a>
+                <a class="text-decoration-none opacity-75">Career</a>
               </li>
               <li>
-                <a class="text-decoration-none">Our story</a>
+                <a class="text-decoration-none opacity-75">Our story</a>
               </li>
             </ul>
           </div>
 
-          <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+          <div class="col-lg-2 col-md-4 mb-4 mt-lg-0 mt-md-4">
             <h5 class="fw-semibold text-dark mb-3">Contact</h5>
 
             <ul class="list-unstyled mb-0">
               <li>
-                <a class="text-decoration-none">Getting Started</a>
+                <a class="text-decoration-none opacity-75">Getting Started</a>
               </li>
               <li class="my-4">
-                <a class="text-decoration-none">Pricing</a>
+                <a class="text-decoration-none opacity-75">Pricing</a>
               </li>
               <li>
-                <a class="text-decoration-none">Resources</a>
+                <a class="text-decoration-none opacity-75">Resources</a>
               </li>
             </ul>
           </div>
         </div>
-        <div class="text-start mt-5">
+        <div class="mt-5">
           <p class="opacity-75">
             2023 all Right Reserved Term of use GREENMIND
           </p>
@@ -93,8 +93,12 @@ export default {
 </script>
 
 <style>
-p,
+p {
+  color: #1e1e1e;
+}
+
 li a {
   color: #1e1e1e;
+  cursor: pointer;
 }
 </style>
