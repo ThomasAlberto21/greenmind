@@ -14,7 +14,7 @@
               placeholder="Search Plants..."
               aria-label="Search Plants..."
               aria-describedby="basic-addon2"
-              @keyup="searchFood"
+              @keyup="searchPlants"
             />
             <div
               class="input-group-text text-white"
@@ -55,12 +55,20 @@ export default {
   data() {
     return {
       all_products: [],
+      search: '',
     };
   },
 
   methods: {
     setAllProducts(data) {
       this.all_products = data;
+    },
+
+    searchPlants() {
+      axios
+        .get('http://localhost:3000/all_products?q=' + this.search)
+        .then((response) => this.setAllProducts(response.data))
+        .catch((error) => console.log(error));
     },
   },
 
