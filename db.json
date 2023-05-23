@@ -45,5 +45,146 @@
       "image": "https://images.unsplash.com/photo-1494515740382-c1c0585affeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=436&q=80"
     }
   ],
-  "all_products": []
+  "all_products": [
+    {
+      "id": 1,
+      "title": "Rose Plants",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae eaque veritatis iure ullam ad quidem delectus velit laudantium dicta voluptate!",
+      "price": 200,
+      "image": "https://plus.unsplash.com/premium_photo-1676478746758-fc6c01e6a96d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+    },
+    {
+      "id": 2,
+      "title": "Sunflowers Plants",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae eaque veritatis iure ullam ad quidem delectus velit laudantium dicta voluptate!",
+      "price": 120,
+      "image": "https://images.unsplash.com/photo-1534608762948-7f173ea7d92e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=389&q=80"
+    },
+    {
+      "id": 3,
+      "title": "Ochid Plants",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae eaque veritatis iure ullam ad quidem delectus velit laudantium dicta voluptate!",
+      "price": 122,
+      "image": "https://images.unsplash.com/photo-1560371837-aff79beaca62?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80"
+    },
+    {
+      "id": 4,
+      "title": "Tulip Plants",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae eaque veritatis iure ullam ad quidem delectus velit laudantium dicta voluptate!",
+      "price": 112,
+      "image": "https://images.unsplash.com/photo-1494515740382-c1c0585affeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=436&q=80"
+    },
+    {
+      "id": 5,
+      "title": "Natural Plants",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae eaque veritatis iure ullam ad quidem delectus velit laudantium dicta voluptate!",
+      "price": 100,
+      "image": "https://plus.unsplash.com/premium_photo-1681807331836-74c62f6ccab0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=382&q=80"
+    },
+    {
+      "id": 6,
+      "title": "Artifical Plants",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae eaque veritatis iure ullam ad quidem delectus velit laudantium dicta voluptate!",
+      "price": 132,
+      "image": "https://images.unsplash.com/photo-1557090495-fc9312e77b28?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+    },
+    {
+      "id": 7,
+      "title": "Daisy Plants",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae eaque veritatis iure ullam ad quidem delectus velit laudantium dicta voluptate!",
+      "price": 142,
+      "image": "https://images.unsplash.com/photo-1682978994188-c070fb689d6d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=331&q=80"
+    },
+    {
+      "id": 8,
+      "title": "Lily Plants",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae eaque veritatis iure ullam ad quidem delectus velit laudantium dicta voluptate!",
+      "price": 144,
+      "image": "https://images.unsplash.com/photo-1620311497344-bce841c9c060?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=465&q=80"
+    },
+    {
+      "id": 9,
+      "title": "Jasmine Plants",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae eaque veritatis iure ullam ad quidem delectus velit laudantium dicta voluptate!",
+      "price": 145,
+      "image": "https://images.unsplash.com/photo-1532499759897-cdb3e1a287d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80"
+    },
+    {
+      "id": 10,
+      "title": "Lavender Plants",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae eaque veritatis iure ullam ad quidem delectus velit laudantium dicta voluptate!",
+      "price": 90,
+      "image": "https://images.unsplash.com/photo-1625934036482-2dccff707564?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+    },
+    {
+      "id": 11,
+      "title": "Marigold Plants",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae eaque veritatis iure ullam ad quidem delectus velit laudantium dicta voluptate!",
+      "price": 95,
+      "image": "https://images.unsplash.com/photo-1473973916745-60839aebf06b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+    },
+    {
+      "id": 12,
+      "title": "Violet Plants",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae eaque veritatis iure ullam ad quidem delectus velit laudantium dicta voluptate!",
+      "price": 220,
+      "image": "https://images.unsplash.com/photo-1563419837758-e48ef1b731dd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+    },
+    {
+      "id": 13,
+      "title": "Kaktus Plants",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae eaque veritatis iure ullam ad quidem delectus velit laudantium dicta voluptate!",
+      "price": 160,
+      "image": "https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=474&q=80"
+    },
+    {
+      "id": 14,
+      "title": "Fern Plants",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae eaque veritatis iure ullam ad quidem delectus velit laudantium dicta voluptate!",
+      "price": 121,
+      "image": "https://images.unsplash.com/photo-1604762525953-2c80447cc4a6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+    },
+    {
+      "id": 15,
+      "title": "Ivy Plants",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae eaque veritatis iure ullam ad quidem delectus velit laudantium dicta voluptate!",
+      "price": 120,
+      "image": "https://images.unsplash.com/photo-1521503862198-2ae9a997bbc9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+    },
+    {
+      "id": 16,
+      "title": "Oak Plants",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae eaque veritatis iure ullam ad quidem delectus velit laudantium dicta voluptate!",
+      "price": 122,
+      "image": "https://images.unsplash.com/photo-1502651492682-6c7b46d75d85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=388&q=80"
+    },
+    {
+      "id": 17,
+      "title": "Daffodil Plants",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae eaque veritatis iure ullam ad quidem delectus velit laudantium dicta voluptate!",
+      "price": 125,
+      "image": "https://images.unsplash.com/photo-1597055181187-1f9b726e2d66?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80"
+    },
+    {
+      "id": 18,
+      "title": "Hydrangea Plants",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae eaque veritatis iure ullam ad quidem delectus velit laudantium dicta voluptate!",
+      "price": 123,
+      "image": "https://images.unsplash.com/photo-1597306200021-f8e16b12fb45?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80"
+    },
+    {
+      "id": 19,
+      "title": "Maple Plants",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae eaque veritatis iure ullam ad quidem delectus velit laudantium dicta voluptate!",
+      "price": 153,
+      "image": "https://plus.unsplash.com/premium_photo-1681807331836-74c62f6ccab0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=382&q=80"
+    },
+    {
+      "id": 20,
+      "title": "Azalea Plants",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae eaque veritatis iure ullam ad quidem delectus velit laudantium dicta voluptate!",
+      "price": 163,
+      "image": "https://images.unsplash.com/photo-1562351757-66f3589f30cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=386&q=80"
+    }
+  ]
 }
