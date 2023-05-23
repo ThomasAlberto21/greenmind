@@ -15,13 +15,35 @@
       "image": "https://images.unsplash.com/photo-1557090495-fc9312e77b28?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
     }
   ],
-  "all_products": [
+  "trending_products": [
     {
       "id": 1,
       "title": "Rose Plants",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae eaque veritatis iure ullam ad quidem delectus velit laudantium dicta voluptate!",
       "price": 200,
-      "image": "https://plus.unsplash.com/premium_photo-1681807331836-74c62f6ccab0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=382&q=80"
+      "image": "https://plus.unsplash.com/premium_photo-1676478746758-fc6c01e6a96d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+    },
+    {
+      "id": 2,
+      "title": "Sunflowers Plants",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae eaque veritatis iure ullam ad quidem delectus velit laudantium dicta voluptate!",
+      "price": 120,
+      "image": "https://images.unsplash.com/photo-1534608762948-7f173ea7d92e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=389&q=80"
+    },
+    {
+      "id": 3,
+      "title": "Ochid Plants",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae eaque veritatis iure ullam ad quidem delectus velit laudantium dicta voluptate!",
+      "price": 122,
+      "image": "https://images.unsplash.com/photo-1560371837-aff79beaca62?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80"
+    },
+    {
+      "id": 4,
+      "title": "Tulip Plants",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae eaque veritatis iure ullam ad quidem delectus velit laudantium dicta voluptate!",
+      "price": 112,
+      "image": "https://images.unsplash.com/photo-1494515740382-c1c0585affeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=436&q=80"
     }
-  ]
+  ],
+  "all_products": []
 }
