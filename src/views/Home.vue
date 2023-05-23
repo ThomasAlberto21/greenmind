@@ -1,8 +1,8 @@
 <template>
   <section class="home">
+    <Navbar />
     <div class="container">
       <Hero />
-
       <div class="row">
         <div
           class="col-lg-6 col-12"
@@ -19,12 +19,14 @@
 <script>
 import axios from 'axios';
 import Hero from '@/components/Hero.vue';
+import Navbar from '@/components/Navbar.vue';
 import BestProduct from '@/components/BestProduct.vue';
 
 export default {
   name: 'HomeView',
   components: {
     Hero,
+    Navbar,
     BestProduct,
   },
 
