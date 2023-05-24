@@ -1,6 +1,5 @@
 <template>
   <section class="trending_products">
-    
     <router-link to="/products" class="card border-0">
       <img
         :src="trending_product.image"
