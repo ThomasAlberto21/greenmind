@@ -7,7 +7,7 @@
       <img
         :src="trending_product.image"
         alt="trending_product_img"
-        style="height: 25rem"
+        style="height: 30rem"
         class="img-fluid rounded-4"
       />
     </router-link>

@@ -7,7 +7,7 @@
           <img
             :src="best_product.image"
             alt="best_product_image"
-            class="img-fluid rounded-4"
+            class="img-fluid rounded-4 w-100 h-100"
           />
         </div>
 
@@ -33,7 +33,5 @@
 export default {
   name: 'BestProductComponent',
   props: ['best_product'],
-
-  
 };
 </script>

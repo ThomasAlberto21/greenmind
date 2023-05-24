@@ -3,11 +3,11 @@
     <Navbar />
     <div class="container my-5">
       <div class="row">
-        <div class="col-lg-4 col-md-12 mx-auto">
+        <div class="col-lg-4 col-12 mx-auto">
           <img
             :src="best_products.image"
             alt="best_products_image"
-            class="rounded-4 img-fluid"
+            class="rounded-4 img-fluid w-100"
           />
         </div>
 
