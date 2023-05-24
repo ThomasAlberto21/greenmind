@@ -2,7 +2,7 @@ import Home from '../views/Home.vue';
 import Products from '../views/Products.vue';
 import Contact from '../views/Contact.vue';
 import Cart from '../views/Cart.vue';
-import ProductDetail from '../views/ProductDetail.vue';
+import AllProductDetail from '../views/AllProductDetail.vue';
 import BestProductDetail from '../views/BestProductDetail.vue';
 import TrendingProductDetail from '../views/TrendingProductDetail.vue';
 import { createRouter, createWebHistory } from 'vue-router';
@@ -20,8 +20,8 @@ const routes = [
   },
   {
     path: '/products/:id',
-    name: 'ProductDetailView',
-    component: ProductDetail,
+    name: 'AllProductDetailView',
+    component: AllProductDetail,
   },
   {
     path: '/best_products_detail/:id',

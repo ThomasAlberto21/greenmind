@@ -17,7 +17,7 @@ import axios from 'axios';
 import Navbar from '@/components/Navbar.vue';
 
 export default {
-  name: 'ProductDetaiView',
+  name: 'AllProductDetaiView',
   components: {
     Navbar,
   },
