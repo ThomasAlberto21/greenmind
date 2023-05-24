@@ -2,6 +2,9 @@
   <section class="trending_product_view">
     <Navbar />
     <div class="container my-5">
+      <router-link to="/" class="btn btn-dark mb-5 fw-bold"
+        ><i class="bi bi-arrow-left"></i> Back</router-link
+      >
       <div class="row">
         <div class="col-lg-4 col-12 mx-auto">
           <img
