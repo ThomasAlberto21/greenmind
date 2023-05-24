@@ -16,12 +16,12 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-                <td>@mdo</td>
+              <tr v-for="(cart, index) in carts" :key="cart.id">
+                <th>{{ index + 1 }}</th>
+                <td><img :src="cart.best_products.image" class="w-50" /></td>
+                <td>{{ cart.best_products.title }}</td>
+                <td>{{ cart.best_products.quantity }}</td>
+                <td>{{ cart.best_products.price }}</td>
               </tr>
             </tbody>
           </table>
@@ -32,12 +32,32 @@
 </template>
 
 <script>
+import axios from 'axios';
 import Navbar from '@/components/Navbar.vue';
 
 export default {
   name: 'CartView',
   components: {
     Navbar,
+  },
+
+  data() {
+    return {
+      carts: [],
+    };
+  },
+
+  methods: {
+    setCarts(data) {
+      this.carts = data;
+    },
+  },
+
+  mounted() {
+    axios
+      .get('http://localhost:3000/carts')
+      .then((response) => this.setCarts(response.data))
+      .catch((error) => console.log(error));
   },
 };
 </script>

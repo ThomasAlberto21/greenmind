@@ -20,7 +20,7 @@
           <h1 class="fw-semibold mb-4">${{ best_products.price }}</h1>
           <p class="fw-normal">{{ best_products.description }}</p>
 
-          <div class="mt-5">
+          <form class="mt-5" v-on:submit.prevent>
             <div class="d-flex">
               <p class="me-3 my-auto">Quantity</p>
               <button class="btn btn-dark rounded-0" @click="decrement">
@@ -43,7 +43,7 @@
             >
               Add To Cart
             </button>
-          </div>
+          </form>
         </div>
       </div>
     </div>
@@ -64,7 +64,7 @@ export default {
     return {
       value: 0,
       best_products: [],
-      carts: [],
+      carts: {},
     };
   },
 
@@ -87,8 +87,9 @@ export default {
       this.carts.best_products = this.best_products;
       axios
         .post('http://localhost:3000/carts', this.carts)
-        .then(() => {
+        .then((response) => {
           this.$router.push({ path: '/cart' });
+          console.log(response.data);
         })
         .catch((error) => {
           console.log(console.log(error));
