@@ -62,7 +62,7 @@ export default {
 
   data() {
     return {
-      best_products: {},
+      best_products: [],
       carts: { quantity: 0 },
     };
   },
