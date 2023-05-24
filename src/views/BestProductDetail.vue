@@ -3,7 +3,7 @@
     <Navbar />
     <div class="container my-5">
       <div class="row">
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-md-12 mx-auto">
           <img
             :src="best_products.image"
             alt="best_products_image"
@@ -11,14 +11,29 @@
           />
         </div>
 
-        <div class="col-lg-7">
-          <h1 class="fw-bolder">{{ best_products.title }}</h1>
-          <hr />
-          <h1 class="fw-semibold mb-4">${{ best_products.price }}</h1>
-          <p class="fw-normal">{{ best_products.description }}</p>
+        <div class="col-lg-8 col-md-12 position-relative">
+          <div class="top">
+            <h1 class="fw-bolder">{{ best_products.title }}</h1>
+            <hr />
+            <h1 class="fw-semibold mb-4">${{ best_products.price }}</h1>
+            <p class="fw-normal">{{ best_products.description }}</p>
+          </div>
 
-          <div class="mt-5">
-            <p>Quantity</p>
+          <div class="bottom">
+            <div class="d-flex">
+              <p class="me-3 my-auto">Quantity</p>
+              <button class="btn btn-dark rounded-0">-</button>
+              <input
+                type="text"
+                class="btn rounded-0 mx-2 px-0 text-center border border-dark"
+                value="1"
+              />
+              <button class="btn btn-dark rounded-0">+</button>
+            </div>
+
+            <button class="btn btn-dark rounded-0 w-100 mt-4 py-3 fw-bold">
+              Add To Cart
+            </button>
           </div>
         </div>
       </div>
