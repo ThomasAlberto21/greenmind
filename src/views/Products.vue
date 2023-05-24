@@ -70,13 +70,17 @@ export default {
         .then((response) => this.setAllProducts(response.data))
         .catch((error) => console.log(error));
     },
+
+    fetchDataAllProducts() {
+      axios
+        .get('http://localhost:3000/all_products')
+        .then((response) => this.setAllProducts(response.data))
+        .catch((error) => console.log(error));
+    },
   },
 
   mounted() {
-    axios
-      .get('http://localhost:3000/all_products')
-      .then((response) => this.setAllProducts(response.data))
-      .catch((error) => console.log(error));
+    this.fetchDataAllProducts();
   },
 };
 </script>
