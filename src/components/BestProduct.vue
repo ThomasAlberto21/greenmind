@@ -14,7 +14,9 @@
         <!-- Right -->
         <div class="col-md-7 py-lg-0 py-md-0 py-5 px-lg-3 px-md-3 px-5">
           <h2 class="fw-bolder">{{ best_product.title }}</h2>
-          <p class="fw-normal mt-4">{{ best_product.description }}</p>
+          <p class="fw-normal mt-4">
+            {{ best_product.description }}
+          </p>
           <h5 class="fw-semibold mb-4">${{ best_product.price }}</h5>
           <router-link
             :to="'/best_products_detail/' + best_product.id"
@@ -31,5 +33,7 @@
 export default {
   name: 'BestProductComponent',
   props: ['best_product'],
+
+  
 };
 </script>

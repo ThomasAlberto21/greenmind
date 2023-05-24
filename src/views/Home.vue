@@ -64,18 +64,25 @@ export default {
     setTrendingProducts(data) {
       this.trending_products = data;
     },
+
+    fetchDataBestProduct() {
+      axios
+        .get('http://localhost:3000/best_products')
+        .then((response) => this.setBestProducts(response.data))
+        .catch((error) => console.log(error));
+    },
+
+    fetchDataTrendingProduct() {
+      axios
+        .get('http://localhost:3000/trending_products')
+        .then((response) => this.setTrendingProducts(response.data))
+        .catch((error) => console.log(error));
+    },
   },
 
   mounted() {
-    axios
-      .get('http://localhost:3000/best_products')
-      .then((response) => this.setBestProducts(response.data))
-      .catch((error) => console.log(error));
-
-    axios
-      .get('http://localhost:3000/trending_products')
-      .then((response) => this.setTrendingProducts(response.data))
-      .catch((error) => console.log(error));
+    this.fetchDataBestProduct();
+    this.fetchDataTrendingProduct();
   },
 };
 </script>
