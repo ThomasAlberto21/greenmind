@@ -19,19 +19,14 @@
               <tr v-for="(cart, index) in carts" :key="cart.id">
                 <th>{{ index + 1 }}</th>
                 <td class="w-25">
-                  <img
-                    :src="
-                      cart.best_products.all_products.trending_products.image
-                    "
-                    class="w-75"
-                  />
+                  <img :src="cart.image" class="w-75" />
                 </td>
                 <td>
-                  {{ cart.best_products.all_products.trending_products.title }}
+                  {{ cart.title }}
                 </td>
                 <td>{{ cart.quantity }}</td>
                 <td>
-                  {{ cart.best_products.all_products.trending_products.price }}
+                  {{ cart.price }}
                 </td>
               </tr>
             </tbody>
@@ -54,21 +49,16 @@ export default {
 
   data() {
     return {
-      carts: [],
+      carts: {},
     };
   },
 
-  methods: {
-    setCarts(data) {
-      this.carts = data;
-    },
-  },
-
-  mounted() {
-    axios
-      .get('http://localhost:3000/carts')
-      .then((response) => this.setCarts(response.data))
-      .catch((error) => console.log(error));
-  },
+  // mounted() {
+  //   axios
+  //     .get('http://localhost:3000/carts')
+  //     .then((response) => this.setCarts(response.data))
+  //     .catch((error) => console.log(error));
+  //   this.fetchCartItems();
+  // },
 };
 </script>
