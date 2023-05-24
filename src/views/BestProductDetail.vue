@@ -12,14 +12,12 @@
         </div>
 
         <div class="col-lg-8 col-md-12 position-relative">
-          <div class="top">
-            <h1 class="fw-bolder">{{ best_products.title }}</h1>
-            <hr />
-            <h1 class="fw-semibold mb-4">${{ best_products.price }}</h1>
-            <p class="fw-normal">{{ best_products.description }}</p>
-          </div>
+          <h1 class="fw-bolder">{{ best_products.title }}</h1>
+          <hr />
+          <h1 class="fw-semibold mb-4">${{ best_products.price }}</h1>
+          <p class="fw-normal">{{ best_products.description }}</p>
 
-          <div class="bottom">
+          <div class="mt-5">
             <div class="d-flex">
               <p class="me-3 my-auto">Quantity</p>
               <button class="btn btn-dark rounded-0">-</button>
