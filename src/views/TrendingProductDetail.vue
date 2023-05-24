@@ -20,23 +20,30 @@
           <h1 class="fw-semibold mb-4">${{ trending_products.price }}</h1>
           <p class="fw-normal">{{ trending_products.description }}</p>
 
-          <div class="mt-5">
+          <form class="mt-5" v-on:submit.prevent>
             <div class="d-flex">
               <p class="me-3 my-auto">Quantity</p>
-              <button class="btn btn-dark rounded-0">-</button>
+              <button class="btn btn-dark rounded-0" @click="decrement">
+                -
+              </button>
               <input
-                type="text"
+                type="number"
                 class="rounded-0 mx-2 text-center border border-dark"
-                value="1"
-                style="width: 3rem"
+                v-model="carts.quantity"
+                style="width: 5rem"
               />
-              <button class="btn btn-dark rounded-0">+</button>
+              <button class="btn btn-dark rounded-0" @click="increment">
+                +
+              </button>
             </div>
 
-            <button class="btn btn-dark rounded-pill w-100 mt-4 py-3 fw-bold">
+            <button
+              class="btn btn-dark rounded-pill w-100 mt-4 py-3 fw-bold"
+              @click="submitOrder"
+            >
               Add To Cart
             </button>
-          </div>
+          </form>
         </div>
       </div>
     </div>
@@ -56,12 +63,35 @@ export default {
   data() {
     return {
       trending_products: [],
+      carts: { quantity: 0 },
     };
   },
 
   methods: {
     setTrendingProduct(data) {
       this.trending_products = data;
+    },
+
+    increment() {
+      this.carts.quantity++;
+    },
+
+    decrement() {
+      if (this.carts.quantity > 0) {
+        this.carts.quantity--;
+      }
+    },
+
+    submitOrder() {
+      this.carts.trending_products = this.trending_products;
+      axios
+        .post('http://localhost:3000/carts', this.carts)
+        .then(() => {
+          this.$router.push({ path: '/cart' });
+        })
+        .catch((error) => {
+          console.log(console.log(error));
+        });
     },
 
     fetchDataTrendingProducts() {

@@ -19,11 +19,20 @@
               <tr v-for="(cart, index) in carts" :key="cart.id">
                 <th>{{ index + 1 }}</th>
                 <td class="w-25">
-                  <img :src="cart.best_products.image" class="w-75" />
+                  <img
+                    :src="
+                      cart.best_products.all_products.trending_products.image
+                    "
+                    class="w-75"
+                  />
                 </td>
-                <td>{{ cart.best_products.title }}</td>
+                <td>
+                  {{ cart.best_products.all_products.trending_products.title }}
+                </td>
                 <td>{{ cart.quantity }}</td>
-                <td>{{ cart.best_products.price }}</td>
+                <td>
+                  {{ cart.best_products.all_products.trending_products.price }}
+                </td>
               </tr>
             </tbody>
           </table>

@@ -30,7 +30,7 @@
               <input
                 type="number"
                 class="rounded-0 mx-2 text-center border border-dark"
-                v-model="value"
+                v-model="carts.quantity"
                 style="width: 3rem"
               />
               <button class="btn btn-dark rounded-0" @click="increment">
@@ -63,9 +63,8 @@ export default {
 
   data() {
     return {
-      // value: 0,
       all_products: [],
-      carts: {},
+      carts: { quantity: 0 },
     };
   },
 
@@ -74,27 +73,27 @@ export default {
       this.all_products = data;
     },
 
-    // increment() {
-    //   this.value++;
-    // },
+    increment() {
+      this.carts.quantity++;
+    },
 
-    // decrement() {
-    //   if (this.value > 0) {
-    //     this.value--;
-    //   }
-    // },
+    decrement() {
+      if (this.carts.quantity > 0) {
+        this.carts.quantity--;
+      }
+    },
 
-    // submitOrder() {
-    //   this.carts.all_products = this.all_products;
-    //   axios
-    //     .post('http://localhost:3000/carts', this.carts)
-    //     .then(() => {
-    //       this.$router.push({ path: '/cart' });
-    //     })
-    //     .catch((error) => {
-    //       console.log(console.log(error));
-    //     });
-    // },
+    submitOrder() {
+      this.carts.all_products = this.all_products;
+      axios
+        .post('http://localhost:3000/carts', this.carts)
+        .then(() => {
+          this.$router.push({ path: '/cart' });
+        })
+        .catch((error) => {
+          console.log(console.log(error));
+        });
+    },
 
     fetchDataAllProducts() {
       axios
