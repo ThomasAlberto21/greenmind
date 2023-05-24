@@ -2,7 +2,7 @@
   <section class="products">
     <Navbar />
     <div class="container my-5">
-      <h3 class="fw-normal mb-5">All <strong>Products</strong></h3>
+      <h3 class="fw-bold mb-5">All Products</h3>
 
       <div class="row mb-5">
         <div class="col">
