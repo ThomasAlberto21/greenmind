@@ -1,6 +1,6 @@
 <template>
   <section class="all_product">
-    <router-link to="/products" class="card border-0">
+    <router-link :to="'/products/' + all_product.id" class="card border-0">
       <img
         :src="all_product.image"
         alt="trending_product_img"
