@@ -17,9 +17,9 @@
           <p class="fw-normal mt-4">{{ best_product.description }}</p>
           <h5 class="fw-light mb-4">${{ best_product.price }}</h5>
           <router-link
-            to="/cart"
+            :to="'/best_products_detail/' + best_product.id"
             class="btn btn-dark text-light px-5 py-2 rounded-pill fw-bold"
-            >Buy Now <i class="bi bi-arrow-right ms-1 h5"></i
+            >View Plant <i class="bi bi-arrow-right ms-1 h5"></i
           ></router-link>
         </div>
       </div>

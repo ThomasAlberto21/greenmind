@@ -3,6 +3,7 @@ import Products from '../views/Products.vue';
 import Contact from '../views/Contact.vue';
 import Cart from '../views/Cart.vue';
 import ProductDetail from '../views/ProductDetail.vue';
+import BestProductDetail from '../views/BestProductDetail.vue';
 import { createRouter, createWebHistory } from 'vue-router';
 
 const routes = [
@@ -20,6 +21,11 @@ const routes = [
     path: '/products/:id',
     name: 'ProductDetailView',
     component: ProductDetail,
+  },
+  {
+    path: '/best_products_detail/:id',
+    name: 'BestProductDetailView',
+    component: BestProductDetail,
   },
   {
     path: '/contact',
