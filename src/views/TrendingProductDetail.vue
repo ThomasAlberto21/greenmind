@@ -7,7 +7,7 @@
           <img
             :src="trending_products.image"
             alt="best_products_image"
-            class="rounded-4 img-fluid w-100"
+            class="rounded-4 img-fluid w-100 h-100"
           />
         </div>
 
