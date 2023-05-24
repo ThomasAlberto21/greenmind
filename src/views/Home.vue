@@ -4,6 +4,7 @@
     <div class="container">
       <Hero />
 
+      <!-- Best Product -->
       <div class="row">
         <div
           class="col-lg-6 col-12"
@@ -14,6 +15,7 @@
         </div>
       </div>
 
+      <!-- Trending Product -->
       <div class="text-center my-5">
         <h1 class="fw-bolder">Trending Now</h1>
         <p class="fst-italic">
