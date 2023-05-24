@@ -27,9 +27,9 @@
                 -
               </button>
               <input
-                type="text"
+                type="number"
                 class="rounded-0 mx-2 text-center border border-dark"
-                v-model="value"
+                v-model="carts.quantity"
                 style="width: 3rem"
               />
               <button class="btn btn-dark rounded-0" @click="increment">
@@ -62,9 +62,8 @@ export default {
 
   data() {
     return {
-      value: 0,
-      best_products: [],
-      carts: {},
+      best_products: {},
+      carts: { quantity: 0 },
     };
   },
 
@@ -74,12 +73,12 @@ export default {
     },
 
     increment() {
-      this.value++;
+      this.carts.quantity++;
     },
 
     decrement() {
-      if (this.value > 0) {
-        this.value--;
+      if (this.carts > 0) {
+        this.carts.quantity--;
       }
     },
 

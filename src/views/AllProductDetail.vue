@@ -21,23 +21,30 @@
           <h1 class="fw-semibold mb-4">${{ all_products.price }}</h1>
           <p class="fw-normal">{{ all_products.description }}</p>
 
-          <div class="mt-5">
+          <form class="mt-5" v-on:submit.prevent>
             <div class="d-flex">
               <p class="me-3 my-auto">Quantity</p>
-              <button class="btn btn-dark rounded-0">-</button>
+              <button class="btn btn-dark rounded-0" @click="decrement">
+                -
+              </button>
               <input
-                type="text"
+                type="number"
                 class="rounded-0 mx-2 text-center border border-dark"
-                value="1"
+                v-model="value"
                 style="width: 3rem"
               />
-              <button class="btn btn-dark rounded-0">+</button>
+              <button class="btn btn-dark rounded-0" @click="increment">
+                +
+              </button>
             </div>
 
-            <button class="btn btn-dark rounded-pill w-100 mt-4 py-3 fw-bold">
+            <button
+              class="btn btn-dark rounded-pill w-100 mt-4 py-3 fw-bold"
+              @click="submitOrder"
+            >
               Add To Cart
             </button>
-          </div>
+          </form>
         </div>
       </div>
     </div>
@@ -56,7 +63,9 @@ export default {
 
   data() {
     return {
+      // value: 0,
       all_products: [],
+      carts: {},
     };
   },
 
@@ -64,6 +73,28 @@ export default {
     setAllProducts(data) {
       this.all_products = data;
     },
+
+    // increment() {
+    //   this.value++;
+    // },
+
+    // decrement() {
+    //   if (this.value > 0) {
+    //     this.value--;
+    //   }
+    // },
+
+    // submitOrder() {
+    //   this.carts.all_products = this.all_products;
+    //   axios
+    //     .post('http://localhost:3000/carts', this.carts)
+    //     .then(() => {
+    //       this.$router.push({ path: '/cart' });
+    //     })
+    //     .catch((error) => {
+    //       console.log(console.log(error));
+    //     });
+    // },
 
     fetchDataAllProducts() {
       axios

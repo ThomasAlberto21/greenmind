@@ -22,7 +22,7 @@
                   <img :src="cart.best_products.image" class="w-75" />
                 </td>
                 <td>{{ cart.best_products.title }}</td>
-                <td>{{ cart.best_products.quantity }}</td>
+                <td>{{ cart.quantity }}</td>
                 <td>{{ cart.best_products.price }}</td>
               </tr>
             </tbody>

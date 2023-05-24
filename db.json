@@ -187,16 +187,5 @@
       "image": "https://images.unsplash.com/photo-1562351757-66f3589f30cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=386&q=80"
     }
   ],
-  "carts": [
-    {
-      "best_products": {
-        "id": 1,
-        "title": "Natural Plants",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam sint minus alias voluptate aspernatur commodi modi, architecto sit nam expedita ipsum reiciendis praesentium aliquid quisquam illum suscipit repellendus facilis vel fugit animi ut ullam consectetur voluptatibus?",
-        "price": 100,
-        "image": "https://plus.unsplash.com/premium_photo-1681807331836-74c62f6ccab0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=382&q=80"
-      },
-      "id": 1
-    }
-  ]
+  "carts": []
 }
