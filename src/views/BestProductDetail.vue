@@ -3,7 +3,7 @@
     <Navbar />
     <div class="container my-5">
       <div class="row">
-        <div class="col-lg-3">
+        <div class="col-lg-4">
           <img
             :src="best_products.image"
             alt="best_products_image"
@@ -11,10 +11,10 @@
           />
         </div>
 
-        <div class="col-lg-8">
+        <div class="col-lg-7">
           <h1 class="fw-bolder">{{ best_products.title }}</h1>
           <hr />
-          <h1 class="fw-normal mb-4">${{ best_products.price }}</h1>
+          <h1 class="fw-semibold mb-4">${{ best_products.price }}</h1>
           <p class="fw-normal">{{ best_products.description }}</p>
         </div>
       </div>
