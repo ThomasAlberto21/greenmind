@@ -30,7 +30,7 @@
                 type="number"
                 class="rounded-0 mx-2 text-center border border-dark"
                 v-model="carts.quantity"
-                style="width: 3rem"
+                style="width: 5rem"
               />
               <button class="btn btn-dark rounded-0" @click="increment">
                 +
@@ -77,7 +77,7 @@ export default {
     },
 
     decrement() {
-      if (this.carts > 0) {
+      if (this.carts.quantity > 0) {
         this.carts.quantity--;
       }
     },
@@ -107,3 +107,11 @@ export default {
   },
 };
 </script>
+
+<style>
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+</style>
