@@ -87,9 +87,8 @@ export default {
       this.carts.best_products = this.best_products;
       axios
         .post('http://localhost:3000/carts', this.carts)
-        .then((response) => {
+        .then(() => {
           this.$router.push({ path: '/cart' });
-          console.log(response.data);
         })
         .catch((error) => {
           console.log(console.log(error));

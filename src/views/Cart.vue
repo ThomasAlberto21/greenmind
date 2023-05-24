@@ -18,7 +18,9 @@
             <tbody>
               <tr v-for="(cart, index) in carts" :key="cart.id">
                 <th>{{ index + 1 }}</th>
-                <td><img :src="cart.best_products.image" class="w-50" /></td>
+                <td class="w-25">
+                  <img :src="cart.best_products.image" class="w-75" />
+                </td>
                 <td>{{ cart.best_products.title }}</td>
                 <td>{{ cart.best_products.quantity }}</td>
                 <td>{{ cart.best_products.price }}</td>
