@@ -60,13 +60,17 @@ export default {
     setBestProducts(data) {
       this.best_products = data;
     },
+
+    fetchDataBestProducts() {
+      axios
+        .get('http://localhost:3000/best_products/' + this.$route.params.id)
+        .then((response) => this.setBestProducts(response.data))
+        .catch((error) => console.log(error));
+    },
   },
 
   mounted() {
-    axios
-      .get('http://localhost:3000/best_products/' + this.$route.params.id)
-      .then((response) => this.setBestProducts(response.data))
-      .catch((error) => console.log(error));
+    this.fetchDataBestProducts();
   },
 };
 </script>
