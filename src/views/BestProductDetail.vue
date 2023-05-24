@@ -3,8 +3,19 @@
     <Navbar />
     <div class="container my-5">
       <div class="row">
-        <div class="col-lg-6">
-          <img :src="best_products.image" alt="" />
+        <div class="col-lg-3">
+          <img
+            :src="best_products.image"
+            alt="best_products_image"
+            class="rounded-4 img-fluid"
+          />
+        </div>
+
+        <div class="col-lg-8">
+          <h1 class="fw-bolder">{{ best_products.title }}</h1>
+          <hr />
+          <h1 class="fw-normal mb-4">${{ best_products.price }}</h1>
+          <p class="fw-normal">{{ best_products.description }}</p>
         </div>
       </div>
     </div>
