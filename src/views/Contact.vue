@@ -2,9 +2,9 @@
   <section class="contact">
     <Navbar />
     <div class="mb-4 container">
-      <h2 class="h1-responsive fw-bold text-center my-4">Contact us</h2>
+      <h2 class="h1-responsive fw-bold text-start mb-3 mt-5">Contact us</h2>
 
-      <p class="text-center w-responsive mx-auto mb-5">
+      <p class="text-start w-responsive mx-auto mb-5">
         Do you have any questions? Please do not hesitate to contact us
         directly. Our team will come back to you within a matter of hours to
         help you.
