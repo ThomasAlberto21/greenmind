@@ -13,6 +13,7 @@
                 <th scope="col">Name Plants</th>
                 <th scope="col">Quantity</th>
                 <th scope="col">Price</th>
+                <th scope="col">Delete</th>
               </tr>
             </thead>
             <tbody>
@@ -27,6 +28,14 @@
                 <td>{{ cart.quantity }}</td>
                 <td>
                   {{ cart.products.price }}
+                </td>
+                <td>
+                  <button
+                    class="btn btn-danger text-white"
+                    @click="deleteCart(cart.id)"
+                  >
+                    <i class="bi bi-trash3"></i>
+                  </button>
                 </td>
               </tr>
             </tbody>
