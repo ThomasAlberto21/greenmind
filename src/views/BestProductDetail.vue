@@ -40,6 +40,7 @@
             <button
               class="btn btn-dark rounded-pill w-100 mt-4 py-3 fw-bold"
               @click="submitOrder"
+              :disabled="isButtonDisabled"
             >
               Add To Cart
             </button>
@@ -63,6 +64,7 @@ export default {
 
   data() {
     return {
+      quantity: 0,
       products: {},
       carts: { quantity: 0 },
     };
@@ -101,6 +103,12 @@ export default {
         .get('http://localhost:3000/best_products/' + this.$route.params.id)
         .then((response) => this.setProducts(response.data))
         .catch((error) => console.log(error));
+    },
+  },
+
+  computed: {
+    isButtonDisabled() {
+      return this.carts.quantity === 0;
     },
   },
 
