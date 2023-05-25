@@ -36,7 +36,7 @@
               <span
                 class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-dark"
               >
-                0
+                {{ updateCarts ? updateCarts.length : quantity.length }}
               </span>
             </router-link>
           </li>
@@ -47,9 +47,34 @@
 </template>
 
 <script>
+import axios from 'axios';
+
 export default {
   name: 'NavbarComponent',
   props: ['updateCarts'],
+
+  data() {
+    return {
+      quantity: [],
+    };
+  },
+
+  methods: {
+    setQuantity(data) {
+      this.quantity = data;
+    },
+
+    fetchDataCarts() {
+      axios
+        .get('http://localhost:3000/carts')
+        .then((response) => this.setQuantity(response.data))
+        .catch((error) => console.log(error));
+    },
+  },
+
+  mounted() {
+    this.fetchDataCarts();
+  },
 };
 </script>
 

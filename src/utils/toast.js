@@ -21,7 +21,7 @@ export function addCart(message, options) {
 }
 
 export function deleteCart(message, options) {
-  return toast.error('Delete Cart Success', {
+  return toast.success('Delete Cart Success', {
     position: 'top-right',
     timeout: 2000,
     closeOnClick: true,
