@@ -24,7 +24,7 @@
                 <td>
                   {{ cart.products.title }}
                 </td>
-                <td>{{ cart.products.quantity }}</td>
+                <td>{{ cart.quantity }}</td>
                 <td>
                   {{ cart.products.price }}
                 </td>
@@ -51,6 +51,12 @@ export default {
     return {
       carts: {},
     };
+  },
+
+  methods: {
+    setCarts(data) {
+      this.carts = data;
+    },
   },
 
   mounted() {
