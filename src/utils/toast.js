@@ -19,3 +19,21 @@ export function addCart(message, options) {
     ...options,
   });
 }
+
+export function deleteCart(message, options) {
+  return toast.error('Delete Cart Success', {
+    position: 'top-right',
+    timeout: 2000,
+    closeOnClick: true,
+    pauseOnFocusLoss: true,
+    pauseOnHover: true,
+    draggable: true,
+    draggablePercent: 0.6,
+    showCloseButtonOnHover: false,
+    hideProgressBar: true,
+    closeButton: 'button',
+    icon: true,
+    rtl: false,
+    ...options,
+  });
+}

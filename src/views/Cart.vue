@@ -48,6 +48,7 @@
 
 <script>
 import axios from 'axios';
+import { deleteCart } from '@/utils/toast';
 import Navbar from '@/components/Navbar.vue';
 
 export default {
@@ -65,6 +66,19 @@ export default {
   methods: {
     setCarts(data) {
       this.carts = data;
+    },
+
+    deleteCart(id) {
+      axios
+        .delete('http://localhost:3000/carts/' + id)
+        .then(() => {
+          deleteCart();
+          axios
+            .get('http://localhost:3000/carts')
+            .then((response) => this.setCarts(response.data))
+            .catch((error) => console.log(error));
+        })
+        .catch((error) => console.log(error));
     },
   },
 
