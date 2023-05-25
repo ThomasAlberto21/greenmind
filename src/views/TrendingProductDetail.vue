@@ -8,17 +8,17 @@
       <div class="row">
         <div class="col-lg-4 col-12 mx-auto">
           <img
-            :src="trending_products.image"
+            :src="products.image"
             alt="best_products_image"
             class="rounded-4 img-fluid w-100 h-100"
           />
         </div>
 
         <div class="col-lg-8 col-md-12 mt-lg-0 mt-5">
-          <h1 class="fw-bolder">{{ trending_products.title }}</h1>
+          <h1 class="fw-bolder">{{ products.title }}</h1>
           <hr />
-          <h1 class="fw-semibold mb-4">${{ trending_products.price }}</h1>
-          <p class="fw-normal">{{ trending_products.description }}</p>
+          <h1 class="fw-semibold mb-4">${{ products.price }}</h1>
+          <p class="fw-normal">{{ products.description }}</p>
 
           <form class="mt-5" v-on:submit.prevent>
             <div class="d-flex">
@@ -62,14 +62,14 @@ export default {
 
   data() {
     return {
-      trending_products: [],
+      products: {},
       carts: { quantity: 0 },
     };
   },
 
   methods: {
-    setTrendingProduct(data) {
-      this.trending_products = data;
+    setProducts(data) {
+      this.products = data;
     },
 
     increment() {
@@ -83,7 +83,7 @@ export default {
     },
 
     submitOrder() {
-      this.carts.trending_products = this.trending_products;
+      this.carts.products = this.products;
       axios
         .post('http://localhost:3000/carts', this.carts)
         .then(() => {
@@ -97,7 +97,7 @@ export default {
     fetchDataTrendingProducts() {
       axios
         .get('http://localhost:3000/trending_products/' + this.$route.params.id)
-        .then((response) => this.setTrendingProduct(response.data))
+        .then((response) => this.setProducts(response.data))
         .catch((error) => console.log(error));
     },
   },
