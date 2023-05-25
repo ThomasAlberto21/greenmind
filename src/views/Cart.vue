@@ -26,9 +26,7 @@
                   {{ cart.products.title }}
                 </td>
                 <td>{{ cart.quantity }}</td>
-                <td>
-                  {{ cart.products.price }}
-                </td>
+                <td>${{ cart.products.price }}</td>
                 <td>
                   <button
                     class="btn btn-danger text-white"

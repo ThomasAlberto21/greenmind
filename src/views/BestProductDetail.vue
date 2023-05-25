@@ -70,6 +70,12 @@ export default {
     };
   },
 
+  computed: {
+    isButtonDisabled() {
+      return this.carts.quantity === 0;
+    },
+  },
+
   methods: {
     setProducts(data) {
       this.products = data;
@@ -83,12 +89,6 @@ export default {
       if (this.carts.quantity > 0) {
         this.carts.quantity--;
       }
-    },
-
-    computed: {
-      isButtonDisabled() {
-        return this.carts.quantity === 0;
-      },
     },
 
     submitOrder() {
