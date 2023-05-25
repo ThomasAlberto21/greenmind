@@ -1,6 +1,6 @@
 <template>
   <section class="cart">
-    <Navbar />
+    <Navbar :updateCarts="carts" />
     <div class="container my-5">
       <h1 class="fw-bold mb-5">Cart</h1>
       <div class="row">

@@ -31,8 +31,13 @@
         </ul>
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <router-link to="/cart" type="button">
+            <router-link to="/cart" type="button" class="position-relative">
               <i class="bi bi-cart text-black h5"></i>
+              <span
+                class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-dark"
+              >
+                {{ updateCarts ? updateCarts.length : quantity.length }}
+              </span>
             </router-link>
           </li>
         </ul>
@@ -44,6 +49,7 @@
 <script>
 export default {
   name: 'NavbarComponent',
+  props: ['updateCarts'],
 };
 </script>
 
