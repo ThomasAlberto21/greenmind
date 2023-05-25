@@ -46,6 +46,80 @@
               </tr>
             </tbody>
           </table>
+
+          <button
+            type="button"
+            class="btn btn-dark float-end"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            data-bs-whatever="@mdo"
+          >
+            Checkout <i class="bi bi-cart-check"></i>
+          </button>
+        </div>
+
+        <!-- Modal -->
+        <div
+          class="modal"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1
+                  class="modal-title fs-5 fw-bold text-dark"
+                  id="exampleModalLabel"
+                >
+                  Checkout
+                </h1>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="mb-2">
+                    <label for="name" class="col-form-label fw-bold"
+                      >Name</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Enter Your Name..."
+                      v-model="orders.name"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="address" class="col-form-label fw-bold"
+                      >Address</label
+                    >
+                    <textarea
+                      rows="5"
+                      class="form-control"
+                      placeholder="Enter Your Address..."
+                      v-model="orders.address"
+                    ></textarea>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button
+                  type="submit"
+                  class="btn btn-dark"
+                  @click="checkoutOrders"
+                >
+                  Checkout <i class="bi bi-cart-check"></i>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -54,8 +128,8 @@
 
 <script>
 import axios from 'axios';
-import { deleteCart } from '@/utils/toast';
 import Navbar from '@/components/Navbar.vue';
+import { deleteCart, successOrder, failedOrder } from '@/utils/toast';
 
 export default {
   name: 'CartView',
@@ -66,6 +140,7 @@ export default {
   data() {
     return {
       carts: [],
+      orders: {},
     };
   },
 
@@ -85,6 +160,28 @@ export default {
             .catch((error) => console.log(error));
         })
         .catch((error) => console.log(error));
+    },
+
+    checkoutOrders() {
+      if (this.orders.name && this.orders.address) {
+        this.orders.carts = this.carts;
+        axios.post('http://localhost:3000/orders', this.orders).then(() => {
+          this.carts.map(async (item) => {
+            try {
+              return await axios.delete(
+                'http://localhost:3000/carts/' + item.id
+              );
+            } catch (error) {
+              console.log(error);
+            }
+          });
+
+          this.$router.push({ path: '/success_order' });
+          successOrder();
+        });
+      } else {
+        failedOrder();
+      }
     },
   },
 

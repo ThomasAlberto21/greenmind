@@ -5,6 +5,7 @@ import Cart from '../views/Cart.vue';
 import AllProductDetail from '../views/AllProductDetail.vue';
 import BestProductDetail from '../views/BestProductDetail.vue';
 import TrendingProductDetail from '../views/TrendingProductDetail.vue';
+import SuccessOrder from '../views/SuccessOrder.vue';
 import { createRouter, createWebHistory } from 'vue-router';
 
 const routes = [
@@ -42,6 +43,11 @@ const routes = [
     path: '/cart',
     name: 'CartView',
     component: Cart,
+  },
+  {
+    path: '/success_order',
+    name: 'SuccessOrderView',
+    component: SuccessOrder,
   },
 ];
 
