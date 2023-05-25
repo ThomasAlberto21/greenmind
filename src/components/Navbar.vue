@@ -36,7 +36,7 @@
               <span
                 class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-dark"
               >
-                {{ updateCarts ? updateCarts.length : quantity.length }}
+                0
               </span>
             </router-link>
           </li>

@@ -36,6 +36,14 @@
                   </button>
                 </td>
               </tr>
+
+              <tr>
+                <td colspan="4" class="text-end">Total Price :</td>
+                <td>
+                  <strong>${{ totalPrice }}</strong>
+                </td>
+                <td></td>
+              </tr>
             </tbody>
           </table>
         </div>
@@ -57,7 +65,7 @@ export default {
 
   data() {
     return {
-      carts: {},
+      carts: [],
     };
   },
 
@@ -85,6 +93,14 @@ export default {
       .get('http://localhost:3000/carts')
       .then((response) => this.setCarts(response.data))
       .catch((error) => console.log(error));
+  },
+
+  computed: {
+    totalPrice() {
+      return this.carts.reduce(function (item, data) {
+        return item + data.products.price * data.quantity;
+      }, 0);
+    },
   },
 };
 </script>
