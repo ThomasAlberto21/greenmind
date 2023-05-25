@@ -20,7 +20,7 @@
               <tr v-for="(cart, index) in carts" :key="cart.id">
                 <th>{{ index + 1 }}</th>
                 <td class="w-25">
-                  <img :src="cart.products.image" class="w-75" />
+                  <img :src="cart.products.image" class="w-75 rounded-4" />
                 </td>
                 <td>
                   {{ cart.products.title }}
