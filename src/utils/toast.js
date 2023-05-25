@@ -2,7 +2,7 @@ import { useToast } from 'vue-toastification';
 
 const toast = useToast();
 
-export function showToast(message, options) {
+export function addCart(message, options) {
   return toast.success('Success Add To Cart', {
     position: 'top-right',
     timeout: 2000,

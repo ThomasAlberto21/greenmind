@@ -53,7 +53,7 @@
 
 <script>
 import axios from 'axios';
-import { showToast } from '@/utils/toast';
+import { addCart } from '@/utils/toast';
 import Navbar from '@/components/Navbar.vue';
 
 export default {
@@ -96,7 +96,7 @@ export default {
         .post('http://localhost:3000/carts', this.carts)
         .then(() => {
           this.$router.push({ path: '/cart' });
-          showToast();
+          addCart();
         })
         .catch((error) => {
           console.log(console.log(error));
