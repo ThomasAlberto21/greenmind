@@ -85,6 +85,12 @@ export default {
       }
     },
 
+    computed: {
+      isButtonDisabled() {
+        return this.carts.quantity === 0;
+      },
+    },
+
     submitOrder() {
       this.carts.products = this.products;
       axios
@@ -103,12 +109,6 @@ export default {
         .get('http://localhost:3000/best_products/' + this.$route.params.id)
         .then((response) => this.setProducts(response.data))
         .catch((error) => console.log(error));
-    },
-  },
-
-  computed: {
-    isButtonDisabled() {
-      return this.carts.quantity === 0;
     },
   },
 

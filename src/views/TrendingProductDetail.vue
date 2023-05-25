@@ -69,6 +69,12 @@ export default {
     };
   },
 
+  computed: {
+    isButtonDisabled() {
+      return this.carts.quantity === 0;
+    },
+  },
+
   methods: {
     setProducts(data) {
       this.products = data;
@@ -102,12 +108,6 @@ export default {
         .get('http://localhost:3000/trending_products/' + this.$route.params.id)
         .then((response) => this.setProducts(response.data))
         .catch((error) => console.log(error));
-    },
-  },
-
-  computed: {
-    isButtonDisabled() {
-      return this.carts.quantity === 0;
     },
   },
 
